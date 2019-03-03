@@ -29,6 +29,8 @@ app.get('/add-post', (request, response) => {
 		body: '' + Math.random(),
 		date: 'just now'
 	})
+
+	response.sendStatus(200)
 })
 
 app.listen(7777, () => {
